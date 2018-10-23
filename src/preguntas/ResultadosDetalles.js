@@ -18,7 +18,6 @@ import {
   Grid
 } from "@material-ui/core";
 import dimensiones from "../data/dimensiones.json";
-import globales from "../data/globales.json";
 
 const colores = {
   ok: "#004a00",
@@ -108,7 +107,7 @@ class ResultadosDetalles extends Component {
 
     return (
       <Consumer>
-        {({ t, avg, total, edad, sexo }) => {
+        {({ t, avg, total }) => {
           const { modal } = this.state;
 
           if (!t) {
