@@ -1,0 +1,71 @@
+[
+  {
+    "abbr": "SOM",
+    "nombre": "SOMATIZACIONES",
+    "desc": "Evalúa la presencia de malestares que la persona percibe relacionados con diferentes disfunciones corporales (cardiovasculares, gastrointestinales, respiratorios).",
+    "items": [1, 4, 12, 27, 40, 42, 48, 49, 52, 53, 56, 58]
+  },
+
+  {
+    "abbr": "OBS",
+    "nombre": "OBSESIONES Y COMPULSIONES",
+    "desc": "Incluye síntomas que se identifican con el síndrome clínico del mismo nombre: Pensamientos, acciones e impulsos que son vivenciados como imposibles de evitar o no deseados.",
+    "items": [3, 9, 10, 28, 38, 45, 46, 51, 55, 65]
+  },
+
+  {
+    "abbr": "SI",
+    "nombre": "SENSITIVIDAD INTERPERSONAL",
+    "desc": "Se focaliza en detectar la presencia de sentimientos de inferioridad e inadecuación, en especial cuando la persona se compara con sus semejantes.",
+    "items": [6, 21, 34, 36, 37, 41, 61, 69, 73]
+  },
+
+  {
+    "abbr": "DEP",
+    "nombre": "DEPRESIÓN",
+    "desc": "Los ítems que integran esta subescala representan una muestra representativa de las principales manifestaciones clínicas de una trastorno de tipo depresivo: estado de ánimo disfórico, falta de motivación, poca energía vital, sentimientos de desesperanza, ideaciones suicidas.",
+    "items": [5, 14, 15, 20, 22, 26, 29, 30, 31, 32, 54, 71, 79]
+  },
+
+  {
+    "abbr": "ANS",
+    "nombre": "ANSIEDAD",
+    "desc": "Evalúa la presencia de signos generales de ansiedad tales como nerviosismo, tensión, ataques de pánico, miedos.",
+    "items": [2, 17, 23, 33, 39, 57, 72, 78, 80, 86]
+  },
+
+  {
+    "abbr": "HOS",
+    "nombre": "HOSTILIDAD",
+    "desc": "Esta dimensión hace referencia a pensamientos, sentimientos y acciones característicos de la presencia de afectos negativos de enojo.",
+    "items": [11, 24, 63, 67, 74, 81]
+  },
+
+  {
+    "abbr": "FOB",
+    "nombre": "ANSIEDAD FÓBICA",
+    "desc": "Este malestar alude a una respuesta persistente de miedo ( a personas específicas, lugares, objetos, situaciones) que es en sí misma irracional y desproporcionada en relación con el estímulo que la provoca.",
+    "items": [13, 25, 47, 50, 70, 75, 82]
+  },
+
+  {
+    "abbr": "PAR",
+    "nombre": "IDEACIÓN PARANOIDE",
+    "desc": "Evalúa comportamientos paranoides fundamentalmente en tanto desórdenes del pensamiento: pensamiento proyectivo, suspicacia, temor a la pérdida de autonomía.",
+    "items": [8, 18, 43, 68, 76, 83]
+  },
+
+  {
+    "abbr": "PSIC",
+    "nombre": "PSICOTICISMO",
+    "desc": "Esta dimensión se ha construido con la intensión que represente el constructo en tanto dimensión contínua de la experiencia humana. Incluye síntomas referidos a estados de soledad, estilo de vida esquizoide, alucinaciones y control del pensamiento.",
+    "items": [7, 16, 35, 62, 77, 84, 85, 87, 88, 90]
+  },
+
+  {
+    "abbr": "ADD",
+    "nombre": "ÍTEMS ADICIONALES",
+    "desc": "El SCL-90-R incluye siete ítems que no se incorporan a las nueve dimensiones ya mencionadas pero que tienen relevancia clínica.",
+    "items": [19, 44, 59, 60, 64, 66, 89]
+  }
+]

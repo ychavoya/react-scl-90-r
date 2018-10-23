@@ -1,0 +1,17 @@
+[
+  {
+    "abbr": "IGS",
+    "nombre": "Indice de Severidad Global",
+    "desc": "Es un muy buen indicador del nivel actual de la severidad del malestar. Combina el número de síntomas reconocidos como presentes con la intensidad del malestar percibido."
+  },
+  {
+    "abbr": "TSP",
+    "nombre": "Total de síntomas positivos",
+    "desc": "Se estima contando el total de ítems que tienen una respuesta positiva (mayor que cero)."
+  },
+  {
+    "abbr": "IMSP",
+    "nombre": "Índice de Malestar Sintomático Positivo",
+    "desc": "Pretende evaluar el estilo de respuesta indicando si la persona tiende a exagerar o a minimizar los malestares que lo aquejan. Puntuaciones extremas en este índice también sugieren patrones de respuestas que deben analizarse en términos de actitudes de fingimiento."
+  }
+]
