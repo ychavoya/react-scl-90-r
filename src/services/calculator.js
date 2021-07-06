@@ -29,7 +29,7 @@ const calcularTIndices = (clase, promedioIGS, totalTSP, totalIMSP) => {
   let ptsT = {
     igs: 12,
     tsp: 12,
-    imsp: 12
+    imsp: 12,
   };
 
   for (let looker = 0; looker < 12; looker++) {
@@ -60,13 +60,13 @@ const calcularTIndices = (clase, promedioIGS, totalTSP, totalIMSP) => {
   return ptsT;
 };
 
-const ajustarT = ptst => {
+const ajustarT = (ptst) => {
   if (ptst < 7) return 30 + ptst * 5;
   if (ptst === 7) return 63;
   return 25 + ptst * 5;
 };
 
-export default (respuestas, edad, sexo) => {
+const calculator = (respuestas, edad, sexo) => {
   if (!respuestas) {
     return null;
   }
@@ -77,7 +77,7 @@ export default (respuestas, edad, sexo) => {
 
   dimensiones.forEach((dim, idx) => {
     totalesDim[idx] = 0;
-    dim.items.forEach(preg => {
+    dim.items.forEach((preg) => {
       totalesDim[idx] += respuestas[preg];
       if (respuestas[preg] !== 0) totalTSP++;
     });
@@ -85,7 +85,7 @@ export default (respuestas, edad, sexo) => {
   });
 
   let totalIGS = 0;
-  totalesDim.forEach(total => (totalIGS += total));
+  totalesDim.forEach((total) => (totalIGS += total));
 
   let totalIMSP = totalTSP !== 0 ? totalIGS / totalTSP : 0;
 
@@ -95,8 +95,7 @@ export default (respuestas, edad, sexo) => {
   });
   let promedioIGS = totalIGS / 90;
 
-  let clase =
-    sexo === "M" ? (edad < edadAdulto ? 0 : 1) : edad < edadAdulto ? 2 : 3;
+  let clase = sexo === "M" ? (edad < edadAdulto ? 0 : 1) : edad < edadAdulto ? 2 : 3;
 
   let ptsTD = calcularTDimensiones(clase, promediosDim, promedioIGS);
   let ptsTI = calcularTIndices(clase, promedioIGS, totalTSP, totalIMSP);
@@ -104,21 +103,22 @@ export default (respuestas, edad, sexo) => {
   return {
     t: {
       dim: ptsTD,
-      idx: ptsTI
+      idx: ptsTI,
     },
     avg: {
       dim: promediosDim,
-      igs: promedioIGS
+      igs: promedioIGS,
     },
     total: {
       dim: totalesDim,
       idx: {
         igs: totalIGS,
         tsp: totalTSP,
-        imsp: totalIMSP
-      }
+        imsp: totalIMSP,
+      },
     },
     edad,
-    sexo
+    sexo,
   };
 };
+export default calculator;
